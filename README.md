@@ -96,10 +96,6 @@ export const Dashboard = component$(() => {
 })
 ```
 
-## License
-
-WTFPL
-
 ## Acknowledgments
 
 This is more or less a port of [Wobsoriano's Solid Supabase wrapper](https://github.com/wobsoriano/solid-supabase). Check it out!

@@ -1,7 +1,7 @@
 {
   "name": "@thedeveloper/qwik-supabase",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple wrapper around Supabase.js to enable usage within Qwik.",
   "homepage": "https://github.com/thedeveloper/qwik-supabase#readme",
   "main": "./dist/index.cjs",

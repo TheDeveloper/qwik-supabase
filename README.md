@@ -5,7 +5,7 @@ A simple wrapper around Supabase.js to enable usage within Qwik.
 ## Installation
 
 ```bash
-npm install @supabase/supabase-js qwik-supabase # or pnpm or yarn
+npm install @supabase/supabase-js @thedeveloper/qwik-supabase
 ```
 
 ## Quick start
@@ -16,7 +16,7 @@ Note, you need to create a lazy loaded reference around the client closure, by u
 
 ```tsx
 import { component$, $ } from '@builder.io/qwik'
-import { SupabaseProvider } from 'qwik-supabase'
+import { SupabaseProvider } from '@thedeveloper/qwik-supabase'
 
 // import initialized client
 import { supabase } from '~/supabase'
@@ -39,7 +39,7 @@ delay invoking it in order to keep the client serializable and pass it to a hand
 
 ```tsx
 import { component$ } from '@builder.io/qwik'
-import { useSupabase, QRLSupaBase } from 'qwik-supabase'
+import { useSupabase, QRLSupaBase } from '@thedeveloper/qwik-supabase'
 
 export async function loginUser(e: Event, getSupabase: QRLSupaBase) {
   // Parse login data from `e` ...
@@ -73,7 +73,7 @@ import {
   useSupabaseAuth,
   useSupabaseFrom,
   useSupabaseStorage,
-} from 'qwik-supabase'
+} from '@thedeveloper/qwik-supabase'
 ```
 
 Note, that each of the above, with the exception of `useOnAuthStateChange` follow the same pattern demonstrated above with respect to obtaining the client, for example:
